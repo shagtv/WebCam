@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sample-xml-configuration>
+<cam>
+<height>1024</height>
+<width>768</width>
+</cam>
+<fps>24</fps>
+</sample-xml-configuration>
