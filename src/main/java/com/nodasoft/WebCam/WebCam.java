@@ -29,12 +29,16 @@ public class WebCam extends JFrame {
 
     Image img;
     Webcam webcam;
+	int width = 1024;
+	int height = 768;
 
-    public WebCam() throws IOException {
+    public WebCam(int width, int height) throws IOException {
         super("Web Cam 1.0");
 
+		this.width = width;
+		this.height = height;
         webcam = Webcam.getDefault();
-        webcam.setViewSize(new Dimension(1024, 768));
+        webcam.setViewSize(new Dimension(width, height));
         webcam.open();
         img = webcam.getImage();
     }
